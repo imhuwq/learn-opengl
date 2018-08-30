@@ -10,4 +10,4 @@ add_subdirectory(lib/glad)
 include_directories(lib/glad/include)
 
 add_executable(learn_opengl main.cpp)
-add_subdirectory(chapters)
+add_subdirectory(sources)
