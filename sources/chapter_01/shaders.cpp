@@ -58,8 +58,7 @@ static const float vertices[] = {
 };
 
 static const unsigned int indices[] = {
-        0, 1, 3, // 第一个三角形
-        1, 2, 3  // 第二个三角形
+        0, 1, 2, // 第一个三角形
 };
 
 void SetupBuffers(unsigned int &VAO) {
