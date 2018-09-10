@@ -17,3 +17,6 @@ target_link_libraries(cha01_textures glfw ${GLFW_LIBRARIES} glad stb)
 
 add_executable(cha01_transformations transformations.cpp ${SOURCES})
 target_link_libraries(cha01_transformations glfw ${GLFW_LIBRARIES} glad stb glm)
+
+add_executable(cha01_coordinate_systems coordinate_systems.cpp ${SOURCES})
+target_link_libraries(cha01_coordinate_systems glfw ${GLFW_LIBRARIES} glad stb glm)
