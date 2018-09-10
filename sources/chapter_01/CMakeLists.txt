@@ -14,3 +14,6 @@ target_link_libraries(cha01_shaders glfw ${GLFW_LIBRARIES} glad)
 
 add_executable(cha01_textures textures.cpp ${SOURCES})
 target_link_libraries(cha01_textures glfw ${GLFW_LIBRARIES} glad stb)
+
+add_executable(cha01_transformations transformations.cpp ${SOURCES})
+target_link_libraries(cha01_transformations glfw ${GLFW_LIBRARIES} glad stb glm)

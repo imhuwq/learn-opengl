@@ -12,5 +12,8 @@ include_directories(lib/glad/include)
 add_subdirectory(lib/stb)
 include_directories(lib/stb/include)
 
+add_subdirectory(lib/glm)
+include_directories(lib/glm/include)
+
 add_executable(learn_opengl main.cpp)
 add_subdirectory(sources)
