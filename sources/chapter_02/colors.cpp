@@ -10,47 +10,47 @@
 #include <common/camera.h>
 
 float vertices[] = {
-        -0.5f, -0.5f, -0.5f, 0.0f, 0.0f,
-        0.5f, -0.5f, -0.5f, 1.0f, 0.0f,
-        0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-        0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-        -0.5f, 0.5f, -0.5f, 0.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f, 0.0f, 0.0f,
+        -0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f, -0.5f,
+        0.5f, 0.5f, -0.5f,
+        0.5f, 0.5f, -0.5f,
+        -0.5f, 0.5f, -0.5f,
+        -0.5f, -0.5f, -0.5f,
 
-        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-        0.5f, -0.5f, 0.5f, 1.0f, 0.0f,
-        0.5f, 0.5f, 0.5f, 1.0f, 1.0f,
-        0.5f, 0.5f, 0.5f, 1.0f, 1.0f,
-        -0.5f, 0.5f, 0.5f, 0.0f, 1.0f,
-        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
+        -0.5f, -0.5f, 0.5f,
+        0.5f, -0.5f, 0.5f,
+        0.5f, 0.5f, 0.5f,
+        0.5f, 0.5f, 0.5f,
+        -0.5f, 0.5f, 0.5f,
+        -0.5f, -0.5f, 0.5f,
 
-        -0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-        -0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-        -0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
+        -0.5f, 0.5f, 0.5f,
+        -0.5f, 0.5f, -0.5f,
+        -0.5f, -0.5f, -0.5f,
+        -0.5f, -0.5f, -0.5f,
+        -0.5f, -0.5f, 0.5f,
+        -0.5f, 0.5f, 0.5f,
 
-        0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-        0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-        0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-        0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-        0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-        0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
+        0.5f, 0.5f, 0.5f,
+        0.5f, 0.5f, -0.5f,
+        0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f, 0.5f,
+        0.5f, 0.5f, 0.5f,
 
-        -0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
-        0.5f, -0.5f, -0.5f, 1.0f, 1.0f,
-        0.5f, -0.5f, 0.5f, 1.0f, 0.0f,
-        0.5f, -0.5f, 0.5f, 1.0f, 0.0f,
-        -0.5f, -0.5f, 0.5f, 0.0f, 0.0f,
-        -0.5f, -0.5f, -0.5f, 0.0f, 1.0f,
+        -0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f, 0.5f,
+        0.5f, -0.5f, 0.5f,
+        -0.5f, -0.5f, 0.5f,
+        -0.5f, -0.5f, -0.5f,
 
-        -0.5f, 0.5f, -0.5f, 0.0f, 1.0f,
-        0.5f, 0.5f, -0.5f, 1.0f, 1.0f,
-        0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-        0.5f, 0.5f, 0.5f, 1.0f, 0.0f,
-        -0.5f, 0.5f, 0.5f, 0.0f, 0.0f,
-        -0.5f, 0.5f, -0.5f, 0.0f, 1.0f
+        -0.5f, 0.5f, -0.5f,
+        0.5f, 0.5f, -0.5f,
+        0.5f, 0.5f, 0.5f,
+        0.5f, 0.5f, 0.5f,
+        -0.5f, 0.5f, 0.5f,
+        -0.5f, 0.5f, -0.5f,
 };
 
 static float delta_time = 0.0f;
@@ -58,8 +58,8 @@ static float last_frame = 0.0f;
 static int window_width = 800;
 static int window_height = 600;
 static bool first_mouse = true;
-static float last_mouse_x = 400;
-static float last_mouse_y = 300;
+static float last_mouse_x = float(window_width) / 2.0f;
+static float last_mouse_y = float(window_height) / 2.0f;
 static Camera *camera_ptr;
 static float camera_speed = 0.05f;
 
@@ -94,7 +94,7 @@ void FrameBufferSizeCallback(GLFWwindow *window, int width, int height) {
 }
 
 void SetupViewPort(GLFWwindow *window) {
-    glViewport(0, 0, 800, 600);
+    glViewport(0, 0, window_width, window_height);
     glfwSetFramebufferSizeCallback(window, FrameBufferSizeCallback);
 }
 
@@ -151,11 +151,21 @@ void SetupModelBuffers(unsigned int &VAO) {
     glGenBuffers(1, &EBO);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *) 0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *) 0);
     glEnableVertexAttribArray(0);
+}
 
-    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void *) (3 * sizeof(float)));
-    glEnableVertexAttribArray(1);
+void SetupLightBuffers(unsigned int &VAO) {
+    glGenVertexArrays(1, &VAO);
+    glBindVertexArray(VAO);
+
+    unsigned int VBO;
+    glGenBuffers(1, &VBO);
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *) 0);
+    glEnableVertexAttribArray(0);
 }
 
 void mouse_callback(GLFWwindow *window, double xpos, double ypos) {
@@ -187,7 +197,7 @@ int main() {
     GLFWwindow *window;
     CreateGLFWWindow(window, window_width, window_height);
 
-    Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
+    Camera camera(glm::vec3(0.0f, 0.0f, 6.0f));
     camera_ptr = &camera;
 
     glfwSetCursorPosCallback(window, mouse_callback);
@@ -197,34 +207,22 @@ int main() {
 
     SetupViewPort(window);
 
-    unsigned int texture0, texture1;
-    SetupTextures(texture0, texture1);
+    unsigned int cube_VAO;
+    SetupModelBuffers(cube_VAO);
 
-    unsigned int VAO;
-    SetupModelBuffers(VAO);
+    unsigned int light_VAO;
+    SetupLightBuffers(light_VAO);
 
-    Shader shader("shaders/chapter_01/camera.vert", "shaders/chapter_01/camera.frag");
-    shader.Use();
-    shader.SetInt("texture0", 0);
-    shader.SetInt("texture1", 1);
-
-    glm::vec3 cubePositions[] = {
-            glm::vec3(0.0f, 0.0f, 0.0f),
-            glm::vec3(2.0f, 5.0f, -15.0f),
-            glm::vec3(-1.5f, -2.2f, -2.5f),
-            glm::vec3(-3.8f, -2.0f, -12.3f),
-            glm::vec3(2.4f, -0.4f, -3.5f),
-            glm::vec3(-1.7f, 3.0f, -7.5f),
-            glm::vec3(1.3f, -2.0f, -2.5f),
-            glm::vec3(1.5f, 2.0f, -2.5f),
-            glm::vec3(1.5f, 0.2f, -1.5f),
-            glm::vec3(-1.3f, 1.0f, -1.5f)
-    };
+    Shader cube_shader("shaders/chapter_02/colors_cube.vert", "shaders/chapter_02/colors_cube.frag");
+    Shader light_shader("shaders/chapter_02/colors_light.vert", "shaders/chapter_02/colors_light.frag");
+    glm::vec3 light_position(1.2f, 1.0f, 2.0f);
 
     glm::mat4 model(1.0f);
     glm::mat4 view(1.0f);
     glm::mat4 projection(1.0f);
 
+    glm::vec3 object_color(1.0f, 0.5f, 0.31f);
+    glm::vec3 light_color(1.0f, 1.0f, 1.0f);
 
     while (!glfwWindowShouldClose(window)) {
         auto current_frame = (float) glfwGetTime();
@@ -235,29 +233,32 @@ int main() {
 
         CleanScreen();
 
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, texture0);
-        glActiveTexture(GL_TEXTURE1);
-        glBindTexture(GL_TEXTURE_2D, texture1);
+        cube_shader.Use();
+        cube_shader.SetVec3("object_color", object_color);
+        cube_shader.SetVec3("light_color", light_color);
 
-        glBindVertexArray(VAO);
-
+        model = glm::mat4(1.0f);
         view = camera.GetViewMatrix();
-        shader.SetMat4("view", view);
-
         projection = glm::perspective(glm::radians(camera.Zoom), (float) window_width / (float) window_height, 0.1f, 100.0f);
-        shader.SetMat4("projection", projection);
+        cube_shader.SetMat4("model", model);
+        cube_shader.SetMat4("view", view);
+        cube_shader.SetMat4("projection", projection);
 
-        for (unsigned int i = 0; i < 10; i++) {
-            model = glm::mat4(1.0f);
-            model = glm::translate(model, cubePositions[i]);
-            model = glm::rotate(model, (float) glfwGetTime() * glm::radians(50.0f), glm::vec3(0.5f, 1.0f, 0.0f));
-            float angle = 20.0f * i;
-            model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
-            shader.SetMat4("model", model);
+        glBindVertexArray(cube_VAO);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
 
-            glDrawArrays(GL_TRIANGLES, 0, 36);
-        }
+        light_shader.Use();
+        light_shader.SetVec3("light_color", light_color);
+
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, light_position);
+        model = glm::scale(model, glm::vec3(0.2f));
+        light_shader.SetMat4("model", model);
+        light_shader.SetMat4("projection", projection);
+        light_shader.SetMat4("view", view);
+
+        glBindVertexArray(light_VAO);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
 
         glfwSwapBuffers(window);
         glfwPollEvents();

@@ -76,7 +76,7 @@ static const char *fragment_shader_source = "#version 330 core\n"
                                             "    FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
                                             "}";
 
-void SetupBuffers(unsigned int &VAO) {
+void SetupModelBuffers(unsigned int &VAO) {
     glGenVertexArrays(1, &VAO);
     glBindVertexArray(VAO);
 
@@ -155,7 +155,7 @@ int main() {
     SetupViewPort(window);
 
     unsigned int VAO;
-    SetupBuffers(VAO);
+    SetupModelBuffers(VAO);
 
     unsigned int shader_program;
     SetupShaders(shader_program);

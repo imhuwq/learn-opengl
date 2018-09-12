@@ -1,20 +1,20 @@
-add_executable(cha01_creating_a_window creating_a_window.cpp)
-target_link_libraries(cha01_creating_a_window)
+add_executable(cha0101_creating_a_window creating_a_window.cpp)
+target_link_libraries(cha0101_creating_a_window)
 
-add_executable(cha01_hello_triangle hello_triangle.cpp)
-target_link_libraries(cha01_hello_triangle)
+add_executable(cha0102_hello_triangle hello_triangle.cpp)
+target_link_libraries(cha0102_hello_triangle)
 
-add_executable(cha01_shaders shaders.cpp)
-target_link_libraries(cha01_shaders common)
+add_executable(cha0103_shaders shaders.cpp)
+target_link_libraries(cha0103_shaders common)
 
-add_executable(cha01_textures textures.cpp)
-target_link_libraries(cha01_textures common)
+add_executable(cha0104_textures textures.cpp)
+target_link_libraries(cha0104_textures common)
 
-add_executable(cha01_transformations transformations.cpp)
-target_link_libraries(cha01_transformations common)
+add_executable(cha0105_transformations transformations.cpp)
+target_link_libraries(cha0105_transformations common)
 
-add_executable(cha01_coordinate_systems coordinate_systems.cpp)
-target_link_libraries(cha01_coordinate_systems common)
+add_executable(cha0106_coordinate_systems coordinate_systems.cpp)
+target_link_libraries(cha0106_coordinate_systems common)
 
-add_executable(cha01_camera Camera.cpp)
-target_link_libraries(cha01_camera common)
+add_executable(cha0107_camera Camera.cpp)
+target_link_libraries(cha0107_camera common)

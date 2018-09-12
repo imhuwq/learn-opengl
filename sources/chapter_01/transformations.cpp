@@ -91,7 +91,7 @@ void SetupTextures(unsigned int &texture0, unsigned int &texture1) {
     SetupTexture(texture1, "textures/awesomeface.png", GL_RGBA);
 }
 
-void SetupBuffers(unsigned int &VAO) {
+void SetupModelBuffers(unsigned int &VAO) {
     glGenVertexArrays(1, &VAO);
     glBindVertexArray(VAO);
 
@@ -131,7 +131,7 @@ int main() {
 
 
     unsigned int VAO;
-    SetupBuffers(VAO);
+    SetupModelBuffers(VAO);
 
     Shader shader("shaders/chapter_01/transformations.vert", "shaders/chapter_01/transformations.frag");
     shader.Use();

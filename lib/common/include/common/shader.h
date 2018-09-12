@@ -27,6 +27,8 @@ public:
     void SetFloat(const string &name, float value) const;
 
     void SetMat4(const string& name, const glm::mat4 & value);
+
+    void SetVec3(const string& name, const glm::vec3 & value);
 };
 
 #endif //LEARN_OPENGL_SHADER_H
