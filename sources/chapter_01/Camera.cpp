@@ -3,11 +3,11 @@
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <stb_image.h>
+#include <stb/stb_image.h>
 #include <glm/glm.hpp>
 
-#include "utils/shader.h"
-#include "utils/camera.h"
+#include <common/shader.h>
+#include <common/camera.h>
 
 float vertices[] = {
         -0.5f, -0.5f, -0.5f, 0.0f, 0.0f,
