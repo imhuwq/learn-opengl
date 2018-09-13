@@ -60,7 +60,7 @@ static const unsigned int indices[] = {
         0, 1, 2, // 第一个三角形
 };
 
-void SetupModelBuffers(unsigned int &VAO) {
+void SetupObjectBuffers(unsigned int &VAO) {
     glGenVertexArrays(1, &VAO);
     glBindVertexArray(VAO);
 
@@ -93,7 +93,7 @@ int main() {
     SetupViewPort(window);
 
     unsigned int VAO;
-    SetupModelBuffers(VAO);
+    SetupObjectBuffers(VAO);
 
     Shader shader("shaders/chapter_01/shaders.vert", "shaders/chapter_01/shaders.frag");
 

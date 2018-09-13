@@ -124,7 +124,7 @@ void SetupTextures(unsigned int &texture0, unsigned int &texture1) {
     SetupTexture(texture1, "textures/awesomeface.png", GL_RGBA);
 }
 
-void SetupModelBuffers(unsigned int &VAO) {
+void SetupObjectBuffers(unsigned int &VAO) {
     glGenVertexArrays(1, &VAO);
     glBindVertexArray(VAO);
 
@@ -161,7 +161,7 @@ int main() {
     SetupTextures(texture0, texture1);
 
     unsigned int VAO;
-    SetupModelBuffers(VAO);
+    SetupObjectBuffers(VAO);
 
     Shader shader("shaders/chapter_01/coordinate_systems.vert", "shaders/chapter_01/coordinate_systems.frag");
     shader.Use();
