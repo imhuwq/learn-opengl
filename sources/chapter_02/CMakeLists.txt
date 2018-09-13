@@ -3,3 +3,6 @@ target_link_libraries(cha0201_colors common)
 
 add_executable(cha0202_basic_lighting basic_lighting.cpp)
 target_link_libraries(cha0202_basic_lighting common)
+
+add_executable(cha0203_materials materials.cpp)
+target_link_libraries(cha0203_materials common)
