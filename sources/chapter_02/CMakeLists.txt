@@ -12,3 +12,6 @@ target_link_libraries(cha0204_lighting_maps common)
 
 add_executable(cha0205_light_casters light_casters.cpp)
 target_link_libraries(cha0205_light_casters common)
+
+add_executable(cha0206_multiple_lights multiple_lights.cpp)
+target_link_libraries(cha0206_multiple_lights common)
