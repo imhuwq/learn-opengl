@@ -9,3 +9,6 @@ target_link_libraries(cha0203_materials common)
 
 add_executable(cha0204_lighting_maps lighting_maps.cpp)
 target_link_libraries(cha0204_lighting_maps common)
+
+add_executable(cha0205_light_casters light_casters.cpp)
+target_link_libraries(cha0205_light_casters common)
