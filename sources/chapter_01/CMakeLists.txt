@@ -1,8 +1,8 @@
 add_executable(cha0101_creating_a_window creating_a_window.cpp)
-target_link_libraries(cha0101_creating_a_window)
+target_link_libraries(cha0101_creating_a_window common)
 
 add_executable(cha0102_hello_triangle hello_triangle.cpp)
-target_link_libraries(cha0102_hello_triangle)
+target_link_libraries(cha0102_hello_triangle common)
 
 add_executable(cha0103_shaders shaders.cpp)
 target_link_libraries(cha0103_shaders common)
