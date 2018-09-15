@@ -15,6 +15,9 @@ include_directories(lib/stb/include)
 add_subdirectory(lib/glm)
 include_directories(lib/glm/include)
 
+add_subdirectory(lib/assimp)
+include_directories(lib/assimp/include)
+
 add_subdirectory(lib/common)
 include_directories(lib/common/include)
 
