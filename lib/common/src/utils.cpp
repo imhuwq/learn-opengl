@@ -1,8 +1,3 @@
-#include <string>
-#include <iostream>
-#include <glad/glad.h>
-#include <stb/stb_image.h>
-
 #include "common/utils.h"
 
 using namespace std;

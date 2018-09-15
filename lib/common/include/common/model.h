@@ -14,7 +14,7 @@ using namespace std;
 
 class Model {
 public:
-    Model(char *path) { LoadModel(path); }
+    explicit Model(const string &path) { LoadModel(path); }
 
     void Draw(Shader shader);
 

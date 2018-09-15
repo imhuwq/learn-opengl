@@ -1,0 +1,2 @@
+add_executable(cha0301_loading_model loading_model.cpp)
+target_link_libraries(cha0301_loading_model common)
